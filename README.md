@@ -1,6 +1,6 @@
 # Projeto Laravel Docker PostgreSQL
 
-<img src="/caminho/para/imagem.png" alt="Imagem do Projeto" width="800">
+<img src="public/assets/images/laravel.jpg" alt="Imagem do Projeto" width="800">
 
 ## Descrição do Projeto
 
