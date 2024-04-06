@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Outfit&family=Poppins&display=swap');
+
+body  {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+button {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    color: inherit;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+
+button.hidden {
+    display: none;
+  }
+
+  button.mr-8 {
+    margin-right: 2rem; /* ou ajuste conforme necessário */
+  }
+
+  button.text-n-1\/50 {
+    color: #642EFE; /* substitua por sua cor desejada */
+  }
+
+  button.text-n-1\/50:hover {
+    color: #0000FF; /* substitua por sua cor desejada para hover */
+  }
+
+  @media (min-width: 1024px) {
+    button.lg:block {
+      display: block;
+    }
+  }

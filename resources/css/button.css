@@ -1,0 +1,32 @@
+a.button {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    color: inherit;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+
+  a.button.hidden {
+    display: none;
+  }
+
+  a.button.mr-8 {
+    margin-right: 2rem; /* ou ajuste conforme necessário */
+  }
+
+  a.button.text-n-1\/50 {
+    color: #642EFE; /* substitua por sua cor desejada */
+  }
+
+  a.button.text-n-1\/50:hover {
+    color: #0000FF; /* substitua por sua cor desejada para hover */
+  }
+
+  @media (min-width: 1024px) {
+    a.button.lg:block {
+      display: block;
+    }
+  }

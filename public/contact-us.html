@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <title>Mexant Template - Contact page</title>
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/templatemo-574-mexant.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
+</head>
+
+<body>
+    <!-- ***** Header Area Start ***** -->
+    <header class="header-area header-sticky">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="main-nav">
+                        <!-- ***** Logo Start ***** -->
+                        <a href="index.html" class="logo">
+                            <img src="assets/images/logo.png" alt="">
+                        </a>
+                        <!-- ***** Logo End ***** -->
+                        <!-- ***** Menu Start ***** -->
+                        <ul class="nav">
+                            <li class="scroll-to-section"><a href="index.html">Home</a></li>
+                            <li class="scroll-to-section"><a href="index.html">Serviços</a></li>
+                            <li class="scroll-to-section"><a href="index.html">Sobre</a></li>
+                            <li class="has-sub">
+                                <a href="javascript:void(0)">Páginas</a>
+                                <ul class="sub-menu">
+                                    <li><a href="about-us.html">Sobre Nós</a></li>
+                                    <li><a href="contact-us.html">Cadastro</a></li>
+                                </ul>
+                            </li>
+                            <li class="scroll-to-section"><a href="index.html">Testemunhos</a></li>
+                            <li><a href="contact-us.html">Voltar</a></li>
+                        </ul>
+                        <a class='menu-trigger'>
+                            <span>Menu</span>
+                        </a>
+                        <!-- ***** Menu End ***** -->
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ***** Header Area End ***** -->
+
+    <div class="page-heading">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="header-text">
+                        <h2>Cadastro</h2>
+                        <div class="div-dec"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="contact-us-form">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 offset-lg-3">
+                    <div class="section-heading">
+                        <h6>Faça seu cadastro e</h6>
+                        <h4>consulte por empresas de diversos setores</h4>
+                    </div>
+                </div>
+                <div class="col-lg-10 offset-lg-1">
+                    <form id="contact" action="busca_dados_usuario.php" method="post">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <fieldset>
+                                    <input type="text" name="nome" id="nome" placeholder="Seu Nome..." autocomplete="on" required>
+                                </fieldset>
+                            </div>
+                            <div class="col-lg-6">
+                                <fieldset>
+                                    <input type="text" name="telefone" id="telefone" placeholder="Seu Telefone..." autocomplete="on" required
+                                           oninput="this.value = formatPhoneNumber(this.value);">
+                                </fieldset>
+                            </div>
+                            <div class="col-lg-6">
+                                <fieldset>
+                                    <input type="text" name="email" id="email" pattern="[^ @]*@[^ @]*" placeholder="Digite o E-mail..." required="">
+                                </fieldset>
+                            </div>
+                            <div class="col-lg-6">
+                                <fieldset>
+                                    <input type="password" name="senha" id="senha" placeholder="Informe uma Senha..." autocomplete="off" required>
+                                </fieldset>
+                            </div>
+                            <div class="col-lg-12">
+                                <fieldset>
+                                    <input type="text" name="cpf" id="cpf" placeholder="CPF" autocomplete="on" maxlength="11" pattern="[0-9]{11}" title="Digite apenas números (11 dígitos)" required>
+                                </fieldset>
+                            </div>
+                            <div class="col-lg-6">
+                            
+                        </div>
+                        <div class="col-lg-12">
+                            <fieldset style="text-align: right;">
+                                <button type="submit" id="form-submit" class="orange-button">Enviar</button>
+                            </fieldset>
+                        </div>
+                    </form>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <section class="contact-us-form">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 offset-lg-3">
+                    <div class="section-heading">
+                        <h6>Já tem conta?</h6>
+                        <h4>Faça seu login aqui</h4>
+                    </div>
+                </div>
+                <div class="col-lg-10 offset-lg-1">
+                    <form id="contact" action="processa_cadastro.php" method="post">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <fieldset>
+                                    <input type="email" name="email" id="email" placeholder="Seu Email" required>
+                                </fieldset>
+                            </div>
+                            <div class="col-lg-6">
+                                <fieldset>
+                                    <input type="password" name="senha" id="senha" placeholder="Sua Senha" autocomplete="off" required>
+                                </fieldset>
+                            </div>
+                            <div class="col-lg-6">   
+                        </div>
+                        <div class="col-lg-6">
+                            <fieldset style="text-align: right;">
+                                <button type="submit" id="form-submit" class="orange-button">Enviar</button>
+                            </fieldset>
+                        </div>
+                    </form>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <section class="partners">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2 col-sm-4 col-6">
+                    <div class="item">
+                        <img src="assets/images/client-01.png" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-2 col-sm-4 col-6">
+                    <div class="item">
+                        <img src="assets/images/client-01.png" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-2 col-sm-4 col-6">
+                    <div class="item">
+                        <img src="assets/images/client-01.png" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-2 col-sm-4 col-6">
+                    <div class="item">
+                        <img src="assets/images/client-01.png" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-2 col-sm-4 col-6">
+                    <div class="item">
+                        <img src="assets/images/client-01.png" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-2 col-sm-4 col-6">
+                    <div class="item">
+                        <img src="assets/images/client-01.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright © 2024</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/isotope.min.js"></script>
+    <script src="assets/js/owl-carousel.js"></script>
+    <script src="assets/js/tabs.js"></script>
+    <script src="assets/js/swiper.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+    <script>
+        // Verifica se há uma mensagem de erro na URL (passada como parâmetro)
+        const urlParams = new URLSearchParams(window.location.search);
+        const erro = urlParams.get('erro');
+
+        // Se houver uma mensagem de erro, exibe-a em um popup
+        if (erro) {
+            alert(erro);
+        }
+    </script>
+
+    <script>
+        // Função para formatar o número de telefone
+        function formatPhoneNumber(phoneNumber) {
+            console.log('Número de telefone recebido:', phoneNumber);
+            // Remove todos os caracteres não numéricos
+            phoneNumber = phoneNumber.replace(/\D/g, '');
+
+            // Verifica se o número de telefone tem 11 dígitos (incluindo o DDD)
+            if (phoneNumber.length === 11) {
+                // Formata o número como (XX) XXXX-XXXX
+                return phoneNumber.replace(/(\d{2})(\d{5})(\d{4})/, '($1) $2-$3');
+            } else if (phoneNumber.length === 10) {
+                // Formata o número como (XX) XXXX-XXXX
+                return phoneNumber.replace(/(\d{2})(\d{4})(\d{4})/, '($1) $2-$3');
+            } else {
+                // Retorna o número sem formatação
+                return phoneNumber;
+            }
+        }
+
+        // Event listener para formatar o número de telefone quando o valor do input mudar
+        document.getElementById('phone').addEventListener('input', function(event) {
+            var phoneNumber = event.target.value;
+            event.target.value = formatPhoneNumber(phoneNumber);
+        });
+    </script>
+</body>
+
+</html>

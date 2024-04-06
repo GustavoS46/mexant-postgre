@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <title>Mexant Template - Contact page</title>
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/templatemo-574-mexant.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
+    <!--
+    TemplateMo 574 Mexant
+    https://templatemo.com/tm-574-mexant
+    -->
+</head>
+
+<body>
+    <!-- ***** Header Area Start ***** -->
+    <header class="header-area header-sticky">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="main-nav">
+                        <!-- ***** Logo Start ***** -->
+                        <a href="index.html" class="logo">
+                            <img src="assets/images/logo.png" alt="">
+                        </a>
+                        <!-- ***** Logo End ***** -->
+                        <!-- ***** Menu Start ***** -->
+                        <ul class="nav">
+                            <li class="scroll-to-section"><a href="index.html" class="active">Home</a></li>
+                            <li class="scroll-to-section"><a href="#services">Serviços</a></li>
+                            <li class="scroll-to-section"><a href="#about">Sobre</a></li>
+                            <li class="has-sub">
+                                <a href="javascript:void(0)">Páginas</a>
+                                <ul class="sub-menu">
+                                    <li><a href="about-us.html">Sobre Nós</a></li>
+                                    <li><a href="contact-us.html">Cadastro</a></li>
+                                </ul>
+                            </li>
+                            <li class="scroll-to-section"><a href="#testimonials">Testemunhos</a></li>
+                            <li><a href="index.html" class="logout-button">Sair</a></li>
+                        </ul>
+                        <a class='menu-trigger'>
+                            <span>Menu</span>
+                        </a>
+                        <!-- ***** Menu End ***** -->
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <!-- ***** Header Area End ***** -->
+    <div class="page-heading">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="header-text">
+                        <h2>Cadastro</h2>
+                        <div class="div-dec"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  
+                      
+    <section class="contact-us-form">
+        <div class="container">
+                <div class="col-lg-10 offset-lg-1">
+                    <form id="contact" action="busca_dados_empresa.php" method="post">
+                        <div class="section-heading">
+                            <h6>Editar Empresa</h6>
+                            <h4>Insira os dados atualizados da sua empresa</h4>
+                            <p>Clique em salvar para registrar as atualizações</p>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <fieldset>
+                                    <input type="text" name="nome_fantasia" id="nome_fantasia" placeholder="Nome Fantasia">
+                                </fieldset>
+                            </div>
+                            <div class="col-lg-12">
+                                <fieldset>
+                                    <input type="text" name="cnpj" id="cnpj" placeholder="Número do CNPJ">
+                                </fieldset>
+                            </div>
+                            <div class="col-lg-12">
+                                <fieldset>
+                                    <input type="text" name="email" id="email" placeholder="Email">
+                                </fieldset>
+                            </div>
+                            <div class="col-lg-12">
+                                <fieldset>
+                                    <input type="text" name="telefone" id="telefone" placeholder="Telefone de Contato" autocomplete="on" required oninput="this.value = formatPhoneNumber(this.value);">
+                                </fieldset>
+                            </div>
+                            <div class="col-lg-12">
+                                <fieldset>
+                                    <input type="text" name="descricao" id="descricao" placeholder="Descrição">
+                                </fieldset>                    
+                            </div>
+                            <div class="col-lg-6">
+                                <fieldset style="text-align: right;">
+                                    <button type="submit" id="form-submit" class="orange-button">Enviar</button>
+                                </fieldset>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                
+        </div>
+        </div>
+    </section>
+    <section class="partners">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2 col-sm-4 col-6">
+                    <div class="item">
+                        <img src="assets/images/client-01.png" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-2 col-sm-4 col-6">
+                    <div class="item">
+                        <img src="assets/images/client-01.png" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-2 col-sm-4 col-6">
+                    <div class="item">
+                        <img src="assets/images/client-01.png" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-2 col-sm-4 col-6">
+                    <div class="item">
+                        <img src="assets/images/client-01.png" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-2 col-sm-4 col-6">
+                    <div class="item">
+                        <img src="assets/images/client-01.png" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-2 col-sm-4 col-6">
+                    <div class="item">
+                        <img src="assets/images/client-01.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright © 2024. All Rights Reserved.
+                        <br>Designed by <a title="CSS Templates" rel="sponsored" href="https://templatemo.com"
+                            target="_blank">TemplateMo</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/isotope.min.js"></script>
+    <script src="assets/js/owl-carousel.js"></script>
+    <script src="assets/js/tabs.js"></script>
+    <script src="assets/js/swiper.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script src="assets/js/preencherCamposDoJSON.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+
+    <script>
+        // Função para enviar a solicitação de consulta ao CNPJ
+        function consultar() {
+            // Obtém o valor do CNPJ do campo de entrada
+            var cnpj = document.getElementById("cnpj").value;
+
+            // Envia a solicitação POST para o arquivo PHP que fará a consulta ao CNPJ
+            fetch('consulta_cnpj.php', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded',
+                },
+                body: 'cnpj=' + encodeURIComponent(cnpj)
+            })
+            .then(response => response.json())
+            .then(data => {
+                // Exibe as informações retornadas no campo de resultado
+                document.getElementById("resultado").innerText = JSON.stringify(data, null, 2);
+            })
+            .catch(error => {
+                console.error('Erro ao consultar CNPJ:', error);
+            });
+        }
+
+        // Adiciona um listener para o evento de envio do formulário
+        document.getElementById("consulta-form").addEventListener("submit", function(event) {
+            event.preventDefault(); // Impede o envio padrão do formulário
+            consultarCNPJ(); // Chama a função de consulta
+        });
+    </script>
+
+<script>
+    // Função para buscar os dados do usuário com base no e-mail
+    function buscarDadosDoUsuario(email) {
+        // Requisição AJAX para buscar os dados do usuário
+        var xhr = new XMLHttpRequest();
+        xhr.open('GET', 'buscar_dados_usuario.php?email=' + encodeURIComponent(email), true);
+        xhr.onload = function () {
+            if (xhr.status === 200) {
+                try {
+                    // Parse do JSON para objeto JavaScript
+                    var userData = JSON.parse(xhr.responseText);
+
+                    // Exemplo: preenche os campos do formulário com os dados do usuário
+                    document.getElementById('nome').value = userData.nome || '';
+                    document.getElementById('telefone').value = userData.telefone || '';
+                    document.getElementById('email').value = userData.email || '';
+                    document.getElementById('senha').value = ''; // Deixar o campo de senha vazio por questões de segurança
+                    document.getElementById('cpf').value = userData.cpf || '';
+                } catch (error) {
+                    console.error('Erro ao processar o JSON:', error);
+                }
+            } else {
+                console.error('Erro na requisição:', xhr.statusText);
+            }
+        };
+        xhr.onerror = function () {
+            console.error('Erro de rede ao buscar os dados do usuário');
+        };
+        xhr.send();
+    }
+
+    // Chama a função quando a página carrega, passando um e-mail fixo como parâmetro
+    window.onload = function () {
+        buscarDadosDoUsuario('exemplo@email.com');
+    };
+</script>
+
+    <script>
+        var interleaveOffset = 0.5;
+        var swiperOptions = {
+            loop: true,
+            speed: 1000,
+            grabCursor: true,
+            watchSlidesProgress: true,
+            mousewheelControl: true,
+            keyboardControl: true,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev"
+            },
+            on: {
+                progress: function () {
+                    var swiper = this;
+                    for (var i = 0; i < swiper.slides.length; i++) {
+                        var slideProgress = swiper.slides[i].progress;
+                        var innerOffset = swiper.width * interleaveOffset;
+                        var innerTranslate = slideProgress * innerOffset;
+                        swiper.slides[i].querySelector(".slide-inner").style.transform =
+                            "translate3d(" + innerTranslate + "px, 0, 0)";
+                    }
+                },
+                touchStart: function () {
+                    var swiper = this;
+                    for (var i = 0; i < swiper.slides.length; i++) {
+                        swiper.slides[i].style.transition = "";
+                    }
+                },
+                setTransition: function (speed) {
+                    var swiper = this;
+                    for (var i = 0; i < swiper.slides.length; i++) {
+                        swiper.slides[i].style.transition = speed + "ms";
+                        swiper.slides[i].querySelector(".slide-inner").style.transition =
+                            speed + "ms";
+                    }
+                }
+            }
+        };
+        var swiper = new Swiper(".swiper-container", swiperOptions);
+    </script>
+    <script>
+        // Função para formatar o número de telefone
+        function formatPhoneNumber(phoneNumber) {
+            console.log('Número de telefone recebido:', phoneNumber);
+            // Remove todos os caracteres não numéricos
+            phoneNumber = phoneNumber.replace(/\D/g, '');
+
+            // Verifica se o número de telefone tem 11 dígitos (incluindo o DDD)
+            if (phoneNumber.length === 11) {
+                // Formata o número como (XX) XXXX-XXXX
+                return phoneNumber.replace(/(\d{2})(\d{5})(\d{4})/, '($1) $2-$3');
+            } else if (phoneNumber.length === 10) {
+                // Formata o número como (XX) XXXX-XXXX
+                return phoneNumber.replace(/(\d{2})(\d{4})(\d{4})/, '($1) $2-$3');
+            } else {
+                // Retorna o número sem formatação
+                return phoneNumber;
+            }
+        }
+
+        // Event listener para formatar o número de telefone quando o valor do input mudar
+        document.getElementById('phone').addEventListener('input', function(event) {
+            var phoneNumber = event.target.value;
+            event.target.value = formatPhoneNumber(phoneNumber);
+        });
+    </script>
+    
+</body>
+
+</html>
